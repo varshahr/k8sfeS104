@@ -9,8 +9,9 @@ export const login = async (username, password) => {
 };
 
 export const signup = async (username, email, password) => {
-  return axios.post(`${API_URL}/sign`, { username, email, password });
+  return axios.post(`${API_URL}/signup`, { username, email, password });
 };
+
 
 export const logout = () => {
   localStorage.removeItem("token");
